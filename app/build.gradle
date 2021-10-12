@@ -13,8 +13,8 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "org.schabi.newpipe"
-        resValue "string", "app_name", "NewPipe"
+        applicationId "org.descendo.monkeitube"
+        resValue "string", "app_name", "Monkei-Tube"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 977
@@ -42,11 +42,11 @@ android {
             if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev") {
                 // default values when branch name could not be determined or is master or dev
                 applicationIdSuffix ".debug"
-                resValue "string", "app_name", "NewPipe Debug"
+                resValue "string", "app_name", "Monkei-Tube Debug"
             } else {
                 applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "NewPipe " + workingBranch
-                archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
+                resValue "string", "app_name", "Monkei-Tube " + workingBranch
+                archivesBaseName = 'Monkei-Tube_' + normalizedWorkingBranch
             }
         }
 
@@ -56,8 +56,8 @@ android {
         release {
             if (System.properties.containsKey('packageSuffix')) {
                 applicationIdSuffix System.getProperty('packageSuffix')
-                resValue "string", "app_name", "NewPipe " + System.getProperty('packageSuffix')
-                archivesBaseName = 'NewPipe_' + System.getProperty('packageSuffix')
+                resValue "string", "app_name", "Monkei-Tube " + System.getProperty('packageSuffix')
+                archivesBaseName = 'Monkei-Tube_' + System.getProperty('packageSuffix')
             }
             minifyEnabled true
             shrinkResources false // disabled to fix F-Droid's reproducible build
@@ -173,8 +173,8 @@ afterEvaluate {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "TeamNewPipe_NewPipe"
-        property "sonar.organization", "teamnewpipe"
+        property "sonar.projectKey", "descendo"
+        property "sonar.organization", "descendo"
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
