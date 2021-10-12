@@ -1,4 +1,4 @@
-package org.schabi.newpipe.testUtil
+package org.descendo.monkeitube.testUtil
 
 import io.reactivex.rxjava3.android.plugins.RxAndroidPlugins
 import io.reactivex.rxjava3.plugins.RxJavaPlugins
