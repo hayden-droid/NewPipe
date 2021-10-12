@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.playlist
+package org.descendo.monkeitube.local.playlist
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
@@ -7,10 +7,10 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.Timeout
-import org.schabi.newpipe.database.AppDatabase
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.testUtil.TrampolineSchedulerRule
+import org.descendo.monkeitube.database.AppDatabase
+import org.descendo.monkeitube.database.stream.model.StreamEntity
+import org.descendo.monkeitube.extractor.stream.StreamType
+import org.descendo.monkeitube.testUtil.TrampolineSchedulerRule
 import java.util.concurrent.TimeUnit
 
 class LocalPlaylistManagerTest {
