@@ -1,4 +1,4 @@
-package org.schabi.newpipe
+package org.descendo.monkeitube
 
 import androidx.preference.PreferenceManager
 import com.facebook.stetho.Stetho
@@ -6,7 +6,7 @@ import com.facebook.stetho.okhttp3.StethoInterceptor
 import leakcanary.AppWatcher
 import leakcanary.LeakCanary
 import okhttp3.OkHttpClient
-import org.schabi.newpipe.extractor.downloader.Downloader
+import org.descendo.monkeitube.extractor.downloader.Downloader
 
 class DebugApp : App() {
     override fun onCreate() {
