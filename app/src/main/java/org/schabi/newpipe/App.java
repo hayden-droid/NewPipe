@@ -113,9 +113,6 @@ public class App extends MultiDexApplication {
                 && prefs.getBoolean(getString(R.string.show_image_indicators_key), false));
 
         configureRxJavaErrorHandler();
-
-        // Check for new version
-        startNewVersionCheckService();
     }
 
     @Override
