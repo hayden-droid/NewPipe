@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error;
+package org.descendo.monkeitube.error;
 
 import android.os.Parcel;
 
@@ -7,9 +7,9 @@ import androidx.test.filters.LargeTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.extractor.ServiceList;
-import org.schabi.newpipe.extractor.exceptions.ParsingException;
+import org.descendo.monkeitube.R;
+import org.descendo.monkeitube.extractor.ServiceList;
+import org.descendo.monkeitube.extractor.exceptions.ParsingException;
 
 import java.util.Arrays;
 
